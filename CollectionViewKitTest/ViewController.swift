@@ -13,6 +13,7 @@ import SnapKit
 class ViewController: UIViewController {
     
     let collectionView = CollectionView()
+    var myData = ArrayDataSource(data: Array(1...10))
 
     @IBOutlet weak var BackGroundView: UIView!
     @IBOutlet weak var addButton: UIButton!
@@ -31,10 +32,14 @@ class ViewController: UIViewController {
             $0.top.equalToSuperview().offset(14)
         }
         
-        let dataSource = ArrayDataSource(data: Array(1...10))
+        let dataSource = myData
         let viewSource = ClosureViewSource(viewUpdater: { (view: UILabel, data: Int, index: Int) in
-                
-            view.backgroundColor = .systemBlue
+            
+            let r : CGFloat = CGFloat.random(in: 0.5...0.9)
+            let g : CGFloat = CGFloat.random(in: 0.5...0.9)
+            let b : CGFloat = CGFloat.random(in: 0.5...0.9)
+            
+            view.backgroundColor = UIColor(red: r, green: g, blue: b, alpha: 1)
             view.text = "\(data)"
             view.textAlignment = .center
             view.clipsToBounds = true
@@ -50,7 +55,7 @@ class ViewController: UIViewController {
           sizeSource: sizeSource
         )
         
-        provider.layout = FlowLayout(spacing: 10)
+        provider.layout = FlowLayout(spacing: 10, justifyContent: .center, alignItems: .center, alignContent: .start)
 
         //lastly assign this provider to the collectionView to display the content
         collectionView.provider = provider
@@ -68,6 +73,7 @@ class ViewController: UIViewController {
 
     @IBAction func addButtonTapped(_ sender: UIButton) {
         print(#function)
+        myData.data.append(contentsOf: [myData.data.last! + 1])
     }
 }
 
