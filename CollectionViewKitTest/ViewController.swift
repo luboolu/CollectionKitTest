@@ -21,7 +21,10 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         setUI()
-        
+        setCollectionView()
+    }
+    
+    private func setCollectionView() {
         BackGroundView.addSubview(collectionView)
         collectionView.snp.makeConstraints {
             $0.leading.trailing.bottom.equalToSuperview()
@@ -51,7 +54,6 @@ class ViewController: UIViewController {
 
         //lastly assign this provider to the collectionView to display the content
         collectionView.provider = provider
-        
     }
     
     private func setUI() {
