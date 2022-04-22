@@ -83,6 +83,7 @@ class ViewController: UIViewController {
     
     @IBAction func deleteButtonTapped(_ sender: UIButton) {
         print(#function)
+        myData.data.removeLast()
     }
 }
 
