@@ -28,7 +28,7 @@ class ViewController: UIViewController {
         
         let dataSource = ArrayDataSource(data: Array(1...10))
         let viewSource = ClosureViewSource(viewUpdater: { (view: UILabel, data: Int, index: Int) in
-            
+                
             view.backgroundColor = .systemBlue
             view.text = "\(data)"
             view.textAlignment = .center
@@ -62,3 +62,6 @@ class ViewController: UIViewController {
     }
 }
 
+
+    
+    
