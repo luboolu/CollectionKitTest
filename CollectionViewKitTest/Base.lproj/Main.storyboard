@@ -50,6 +50,7 @@
                     </view>
                     <connections>
                         <outlet property="BackGroundView" destination="RLR-gi-IRn" id="PgG-7E-XD8"/>
+                        <outlet property="addButton" destination="IVY-EY-s0O" id="g4Y-Py-csm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
