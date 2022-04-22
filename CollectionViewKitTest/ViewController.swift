@@ -18,6 +18,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var BackGroundView: UIView!
     @IBOutlet weak var addButton: UIButton!
     @IBOutlet weak var deleteButton: UIButton!
+    @IBOutlet weak var nextButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -78,6 +79,14 @@ class ViewController: UIViewController {
         deleteButton.layer.shadowOffset = CGSize(width: 4, height: 4)
         deleteButton.layer.shadowRadius = 5
         deleteButton.layer.shadowOpacity = 0.3
+        
+        nextButton.clipsToBounds = true
+        nextButton.layer.cornerRadius = 10
+        nextButton.layer.shadowColor = UIColor.black.cgColor
+        nextButton.layer.masksToBounds = false
+        nextButton.layer.shadowOffset = CGSize(width: 4, height: 4)
+        nextButton.layer.shadowRadius = 5
+        nextButton.layer.shadowOpacity = 0.3
     }
     
     @objc func cellDidTapped() {

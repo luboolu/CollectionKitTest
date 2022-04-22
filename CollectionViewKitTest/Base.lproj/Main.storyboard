@@ -24,7 +24,7 @@
                                 <rect key="frame" x="0.0" y="807" width="414" height="55"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8oa-Pg-i0V">
-                                        <rect key="frame" x="217" y="12" width="177" height="31"/>
+                                        <rect key="frame" x="151.5" y="12" width="111" height="31"/>
                                         <color key="backgroundColor" systemColor="systemIndigoColor"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
@@ -36,7 +36,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IVY-EY-s0O">
-                                        <rect key="frame" x="20" y="12" width="177" height="31"/>
+                                        <rect key="frame" x="20" y="12" width="111.5" height="31"/>
                                         <color key="backgroundColor" systemColor="systemBlueColor"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
@@ -47,21 +47,36 @@
                                             <action selector="addButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3xl-pL-ca1"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h05-cc-fJP">
+                                        <rect key="frame" x="282.5" y="12" width="111.5" height="31"/>
+                                        <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Delete">
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="12"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="deleteButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kzs-wd-Gro"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstItem="8oa-Pg-i0V" firstAttribute="leading" secondItem="IVY-EY-s0O" secondAttribute="trailing" constant="20" id="0Gh-2V-Pxw"/>
-                                    <constraint firstItem="8oa-Pg-i0V" firstAttribute="leading" secondItem="IVY-EY-s0O" secondAttribute="trailing" constant="20" id="1ZL-h9-xVh"/>
-                                    <constraint firstItem="8oa-Pg-i0V" firstAttribute="width" secondItem="IVY-EY-s0O" secondAttribute="width" id="KPQ-ao-XAZ"/>
-                                    <constraint firstItem="IVY-EY-s0O" firstAttribute="top" secondItem="Ekw-Cr-ops" secondAttribute="top" constant="12" id="MPX-tL-G16"/>
-                                    <constraint firstItem="IVY-EY-s0O" firstAttribute="leading" secondItem="Ekw-Cr-ops" secondAttribute="leading" constant="20" id="N8k-P7-kvn"/>
-                                    <constraint firstAttribute="bottom" secondItem="8oa-Pg-i0V" secondAttribute="bottom" constant="12" id="W9w-BR-hsl"/>
-                                    <constraint firstAttribute="bottom" secondItem="IVY-EY-s0O" secondAttribute="bottom" constant="12" id="cTW-cu-6au"/>
-                                    <constraint firstItem="8oa-Pg-i0V" firstAttribute="centerY" secondItem="Ekw-Cr-ops" secondAttribute="centerY" id="hQ8-Df-P8q"/>
-                                    <constraint firstAttribute="trailing" secondItem="8oa-Pg-i0V" secondAttribute="trailing" constant="20" id="iYM-Pe-YyG"/>
-                                    <constraint firstItem="IVY-EY-s0O" firstAttribute="centerY" secondItem="Ekw-Cr-ops" secondAttribute="centerY" id="jsc-X8-nFe"/>
+                                    <constraint firstAttribute="bottom" secondItem="h05-cc-fJP" secondAttribute="bottom" constant="12" id="68n-LV-VeI"/>
+                                    <constraint firstItem="h05-cc-fJP" firstAttribute="top" secondItem="Ekw-Cr-ops" secondAttribute="top" constant="12" id="6Zd-Ly-Aoe"/>
+                                    <constraint firstItem="8oa-Pg-i0V" firstAttribute="leading" secondItem="IVY-EY-s0O" secondAttribute="trailing" constant="20" id="9S5-AS-Pk7"/>
+                                    <constraint firstItem="IVY-EY-s0O" firstAttribute="width" secondItem="8oa-Pg-i0V" secondAttribute="width" id="Gnv-bk-dJJ"/>
+                                    <constraint firstAttribute="bottom" secondItem="IVY-EY-s0O" secondAttribute="bottom" constant="12" id="Hht-hO-SQQ"/>
+                                    <constraint firstAttribute="bottom" secondItem="8oa-Pg-i0V" secondAttribute="bottom" constant="12" id="OFe-ef-uTj"/>
+                                    <constraint firstItem="IVY-EY-s0O" firstAttribute="top" secondItem="Ekw-Cr-ops" secondAttribute="top" constant="12" id="TKm-A1-jX8"/>
+                                    <constraint firstAttribute="trailing" secondItem="h05-cc-fJP" secondAttribute="trailing" constant="20" id="TL5-q2-ugf"/>
+                                    <constraint firstItem="IVY-EY-s0O" firstAttribute="leading" secondItem="Ekw-Cr-ops" secondAttribute="leading" constant="20" id="ce7-SK-Qqq"/>
+                                    <constraint firstItem="8oa-Pg-i0V" firstAttribute="top" secondItem="Ekw-Cr-ops" secondAttribute="top" constant="12" id="hpr-dK-FvZ"/>
+                                    <constraint firstItem="h05-cc-fJP" firstAttribute="leading" secondItem="8oa-Pg-i0V" secondAttribute="trailing" constant="20" id="ilS-7g-DDX"/>
+                                    <constraint firstItem="IVY-EY-s0O" firstAttribute="width" secondItem="h05-cc-fJP" secondAttribute="width" id="lh4-h4-WuA"/>
                                     <constraint firstAttribute="height" constant="55" id="rWT-we-dZM"/>
-                                    <constraint firstItem="8oa-Pg-i0V" firstAttribute="top" secondItem="Ekw-Cr-ops" secondAttribute="top" constant="12" id="x1Y-7h-nmL"/>
+                                    <constraint firstItem="8oa-Pg-i0V" firstAttribute="leading" secondItem="IVY-EY-s0O" secondAttribute="trailing" constant="20" id="vES-e9-3hw"/>
+                                    <constraint firstItem="h05-cc-fJP" firstAttribute="leading" secondItem="8oa-Pg-i0V" secondAttribute="trailing" constant="20" id="zZj-Bh-24k"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -81,6 +96,7 @@
                         <outlet property="BackGroundView" destination="RLR-gi-IRn" id="PgG-7E-XD8"/>
                         <outlet property="addButton" destination="IVY-EY-s0O" id="g4Y-Py-csm"/>
                         <outlet property="deleteButton" destination="8oa-Pg-i0V" id="isz-MA-dOg"/>
+                        <outlet property="nextButton" destination="h05-cc-fJP" id="XF2-s2-Rum"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -112,6 +128,9 @@
         </systemColor>
         <systemColor name="systemIndigoColor">
             <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemYellowColor">
             <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
