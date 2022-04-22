@@ -56,7 +56,6 @@
                                             <fontDescription key="titleFontDescription" type="system" pointSize="12"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <action selector="deleteButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kzs-wd-Gro"/>
                                             <segue destination="uFc-Zq-98X" kind="presentation" id="VqD-aA-KZl"/>
                                         </connections>
                                     </button>
@@ -109,7 +108,6 @@
             <objects>
                 <viewController id="uFc-Zq-98X" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DBy-Wq-IQ6">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="2po-Xj-IIs"/>
