@@ -15,10 +15,12 @@ class ViewController: UIViewController {
     let collectionView = CollectionView()
 
     @IBOutlet weak var BackGroundView: UIView!
+    @IBOutlet weak var addButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        setUI()
         
         BackGroundView.addSubview(collectionView)
         collectionView.snp.makeConstraints {
@@ -50,6 +52,11 @@ class ViewController: UIViewController {
         //lastly assign this provider to the collectionView to display the content
         collectionView.provider = provider
         
+    }
+    
+    private func setUI() {
+        addButton.clipsToBounds = true
+        addButton.layer.cornerRadius = 10
     }
     
     @objc func cellDidTapped() {
