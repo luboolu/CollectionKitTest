@@ -55,13 +55,10 @@
                                         <buttonConfiguration key="configuration" style="plain" title="Next">
                                             <fontDescription key="titleFontDescription" type="system" pointSize="12"/>
                                         </buttonConfiguration>
-<<<<<<< HEAD
-=======
                                         <connections>
                                             <action selector="deleteButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kzs-wd-Gro"/>
                                             <segue destination="uFc-Zq-98X" kind="presentation" id="VqD-aA-KZl"/>
                                         </connections>
->>>>>>> newViewController
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
