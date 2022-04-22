@@ -17,18 +17,21 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RLR-gi-IRn">
-                                <rect key="frame" x="0.0" y="44" width="414" height="753"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="734"/>
                                 <color key="backgroundColor" systemColor="systemYellowColor"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IVY-EY-s0O">
-                                <rect key="frame" x="180" y="817" width="54" height="31"/>
+                                <rect key="frame" x="179.5" y="798" width="55" height="44"/>
                                 <color key="backgroundColor" systemColor="systemBlueColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="55" id="MXI-RJ-7GA"/>
+                                    <constraint firstAttribute="width" constant="55" id="1pp-vC-GlG"/>
+                                    <constraint firstAttribute="height" constant="44" id="9cu-G6-H9J"/>
                                 </constraints>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="ADD"/>
+                                <buttonConfiguration key="configuration" style="plain" title="ADD">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="12"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <action selector="addButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3xl-pL-ca1"/>
                                 </connections>
@@ -37,13 +40,12 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="IVY-EY-s0O" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9Ki-Cm-UHK"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="RLR-gi-IRn" secondAttribute="trailing" id="Jum-V6-J63"/>
-                            <constraint firstItem="IVY-EY-s0O" firstAttribute="top" secondItem="RLR-gi-IRn" secondAttribute="bottom" constant="20" id="dF0-Ys-mD0"/>
+                            <constraint firstItem="IVY-EY-s0O" firstAttribute="top" secondItem="RLR-gi-IRn" secondAttribute="bottom" constant="20" id="Pyn-M5-ao0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="IVY-EY-s0O" secondAttribute="bottom" constant="20" id="TK8-QD-qbw"/>
                             <constraint firstItem="RLR-gi-IRn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ivI-Am-9aO"/>
                             <constraint firstItem="RLR-gi-IRn" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="qYw-0E-3ur"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="IVY-EY-s0O" secondAttribute="trailing" constant="180" id="sgz-oL-AVi"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="IVY-EY-s0O" secondAttribute="bottom" constant="14" id="vHI-Hi-ZJb"/>
-                            <constraint firstItem="IVY-EY-s0O" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="180" id="wRh-VU-hBa"/>
                         </constraints>
                     </view>
                     <connections>
