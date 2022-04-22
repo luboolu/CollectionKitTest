@@ -36,9 +36,9 @@ class ViewController: UIViewController {
         let dataSource = myData
         let viewSource = ClosureViewSource(viewUpdater: { (view: UILabel, data: Int, index: Int) in
 
-            let r : CGFloat = CGFloat.random(in: 0.5...0.9)
-            let g : CGFloat = CGFloat.random(in: 0.5...0.9)
-            let b : CGFloat = CGFloat.random(in: 0.5...0.9)
+            let r : CGFloat = CGFloat.random(in: 0.6...0.95)
+            let g : CGFloat = CGFloat.random(in: 0.6...0.95)
+            let b : CGFloat = CGFloat.random(in: 0.6...0.95)
             
             view.backgroundColor = UIColor(red: r, green: g, blue: b, alpha: 1)
             view.text = "\(data)"
