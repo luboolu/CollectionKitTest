@@ -73,6 +73,11 @@ class ViewController: UIViewController {
     @IBAction func addButtonTapped(_ sender: UIButton) {
         print(#function)
     }
+    
+    
+    @IBAction func deleteButtonTapped(_ sender: UIButton) {
+        print(#function)
+    }
 }
 
 
