@@ -36,21 +36,39 @@
                                     <action selector="addButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3xl-pL-ca1"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8oa-Pg-i0V">
+                                <rect key="frame" x="244.5" y="798" width="77" height="44"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="ag0-iJ-E6E"/>
+                                    <constraint firstAttribute="width" constant="77" id="kHR-gI-ixN"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Delete"/>
+                                <connections>
+                                    <action selector="deleteButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HBI-wo-jHI"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="IVY-EY-s0O" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9Ki-Cm-UHK"/>
+                            <constraint firstItem="8oa-Pg-i0V" firstAttribute="leading" secondItem="IVY-EY-s0O" secondAttribute="trailing" constant="10" id="Eme-oD-vlf"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="RLR-gi-IRn" secondAttribute="trailing" id="Jum-V6-J63"/>
                             <constraint firstItem="IVY-EY-s0O" firstAttribute="top" secondItem="RLR-gi-IRn" secondAttribute="bottom" constant="20" id="Pyn-M5-ao0"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="IVY-EY-s0O" secondAttribute="bottom" constant="20" id="TK8-QD-qbw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="8oa-Pg-i0V" secondAttribute="bottom" constant="20" id="X9S-3p-8Jp"/>
                             <constraint firstItem="RLR-gi-IRn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ivI-Am-9aO"/>
                             <constraint firstItem="RLR-gi-IRn" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="qYw-0E-3ur"/>
+                            <constraint firstItem="8oa-Pg-i0V" firstAttribute="top" secondItem="RLR-gi-IRn" secondAttribute="bottom" constant="20" id="tor-Wi-PVf"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="BackGroundView" destination="RLR-gi-IRn" id="PgG-7E-XD8"/>
                         <outlet property="addButton" destination="IVY-EY-s0O" id="g4Y-Py-csm"/>
+                        <outlet property="deleteButton" destination="8oa-Pg-i0V" id="isz-MA-dOg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -64,6 +82,9 @@
         </systemColor>
         <systemColor name="systemBlueColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemYellowColor">
             <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

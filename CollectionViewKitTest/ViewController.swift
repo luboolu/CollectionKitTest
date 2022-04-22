@@ -17,6 +17,7 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var BackGroundView: UIView!
     @IBOutlet weak var addButton: UIButton!
+    @IBOutlet weak var deleteButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -64,6 +65,9 @@ class ViewController: UIViewController {
     private func setUI() {
         addButton.clipsToBounds = true
         addButton.layer.cornerRadius = 10
+        
+        deleteButton.clipsToBounds = true
+        deleteButton.layer.cornerRadius = 10
     }
     
     @objc func cellDidTapped() {
@@ -74,6 +78,11 @@ class ViewController: UIViewController {
     @IBAction func addButtonTapped(_ sender: UIButton) {
         print(#function)
         myData.data.append(contentsOf: [myData.data.last! + 1])
+    }
+    
+    
+    @IBAction func deleteButtonTapped(_ sender: UIButton) {
+        print(#function)
     }
 }
 
