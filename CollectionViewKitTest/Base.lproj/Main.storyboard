@@ -114,8 +114,8 @@
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="YeO-lp-w3u">
                                 <rect key="frame" x="40" y="20" width="334" height="32"/>
                                 <segments>
-                                    <segment title="First"/>
-                                    <segment title="Second"/>
+                                    <segment title="star"/>
+                                    <segment title="heart"/>
                                 </segments>
                                 <connections>
                                     <action selector="segmentChanged:" destination="uFc-Zq-98X" eventType="valueChanged" id="iQ0-It-GnL"/>
