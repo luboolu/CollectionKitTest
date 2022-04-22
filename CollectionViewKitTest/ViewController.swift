@@ -65,6 +65,11 @@ class ViewController: UIViewController {
     private func setUI() {
         addButton.clipsToBounds = true
         addButton.layer.cornerRadius = 10
+        addButton.layer.shadowColor = UIColor.black.cgColor // 색깔
+        addButton.layer.masksToBounds = false
+        addButton.layer.shadowOffset = CGSize(width: 4, height: 4) // 위치조정
+        addButton.layer.shadowRadius = 5 // 반경
+        addButton.layer.shadowOpacity = 0.3 // alpha값
         
         deleteButton.clipsToBounds = true
         deleteButton.layer.cornerRadius = 10
