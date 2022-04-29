@@ -91,6 +91,7 @@ class ViewController: UIViewController {
     
     @objc func cellDidTapped() {
         print(#function)
+        print(#function)
     }
 
 
